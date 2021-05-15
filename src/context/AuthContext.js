@@ -35,7 +35,7 @@ const signup = (dispatch) => async ({ email, password }) => {
     console.log('yo')
     navigate('TrackList');
   } catch (err) {
-    console.log('bad yo')
+    console.log(err)
     dispatch({ type: 'add_error', payload: 'Something went wrong with sign up' });
   }
 };
